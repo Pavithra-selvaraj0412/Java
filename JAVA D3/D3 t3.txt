@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    String password="javatraining";
+	    int count=1;
+	    while(count<=3) {
+	        Scanner sc=new Scanner (System.in);
+	        String pass = sc.nextLine();
+	        if(password.equals(pass)) {
+	            System.out.println("Password correct");
+	            break;
+	        }
+	        else {
+	            System.out.println("Incorrect password .Try again");
+	            count++;
+	        }
+	        if(count>3) {
+	            System.out.println("your access denied");
+	        }
+	    }
+	}
+}
